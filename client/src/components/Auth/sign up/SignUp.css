@@ -1,0 +1,127 @@
+/* Set the body with a full-height and background gradient */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #3E5151, #DECBA4); /* Match background gradient */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container styling for the form */
+.sign-up-container {
+  padding: 30px; /* Adjusted padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  width: 100%;
+  max-width: 350px; /* Narrower form width */
+  text-align: center;
+}
+
+/* Register title styling */
+h2 {
+  color: #1a73e8; /* Blue color for title */
+  margin-bottom: 20px;
+  font-size: 22px; /* Adjusted font size */
+  font-weight: 600;
+  position: relative;
+}
+
+/* Underline styling for h2 */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #1a73e8;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+/* Input fields styling */
+input {
+  width: 100%;
+  padding: 12px; /* Reduced padding */
+  margin-bottom: 15px; /* Smaller margin */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px; /* Reduced font size */
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1a73e8; /* Focused border color */
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+}
+
+/* Styling the password container */
+div[style="position: relative;"] {
+  position: relative;
+  width: 100%;
+}
+
+/* Toggle password button styling */
+.toggle-password-button {
+  background-color: transparent;
+  border: none;
+  color: #1a73e8;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: absolute;
+  left: 130px; /* Aligns the button more comfortably */
+  top: 17px; /* Adjust for better positioning relative to the input */
+  padding: 0; /* Removes any unwanted padding */
+}
+.toggle-password-button:hover {
+  color: #1a73e8;
+  background-color: transparent;
+}
+
+
+
+
+/* Register button styling */
+.registerbtn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px; /* Reduced padding */
+  width: 100%;
+  border-radius: 6px;
+  font-size: 14px; /* Adjusted font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registerbtn:hover {
+  background-color: #1457b7;
+}
+
+.registerbtn:disabled {
+  background-color: #d1d1d1;
+  cursor: not-allowed;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 500px) {
+  .sign-up-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .registerbtn {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

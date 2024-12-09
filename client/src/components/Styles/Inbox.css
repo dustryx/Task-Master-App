@@ -1,0 +1,107 @@
+/* General container styling for the inbox */
+.inbox-container {
+    max-width: 1200px;
+    margin-left: 250px; /* Ensure sidebar width is accounted for */
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    transition: filter 0.3s ease;
+}
+
+/* Content area inside the inbox */
+.inbox-content {
+    transition: filter 0.3s ease;
+}
+
+/* Blur effect for the content if needed */
+.blurred .inbox-content {
+    filter: blur(5px);
+}
+
+/* Styling for the inbox card container */
+.inbox-card-container {
+    background: #f0f0f0;
+    height: 60vh;
+    width: 950px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(14, 11, 11, 0.15);
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+/* List group for inbox items */
+.inbox-list-group {
+    max-height: calc(60vh - 100px);
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Title styling for the inbox */
+.inbox-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Button styling for inbox actions */
+.inbox-action-button {
+    width: 50%;
+    padding: 0.7rem;
+    margin: 20px;
+    margin-top: 1rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.inbox-action-button:hover {
+    background: #17bdf0;
+    transform: scale(1.05);
+}
+
+/* List group item styling for inbox */
+.inbox-list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.inbox-list-group-item:hover {
+    background-color: #d0d1d1;
+}
+
+/* Scrollbar styling for inbox */
+.inbox-list-group::-webkit-scrollbar {
+    width: 8px;
+}
+
+.inbox-list-group::-webkit-scrollbar-thumb {
+    background-color: rgba(71, 167, 250, 0.7);
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+.inbox-list-group::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(71, 167, 250);
+}
+
+.inbox-list-group::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
